@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Robotics Championship 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tech-bg"></div>
+    <div class="grid-overlay"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Evolve 5.0</div>
+            <!-- <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul> -->
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>STATE ROBOTICS CHAMPIONSHIP 2026</h1>
+            <h2>BUILD • RACE • INNOVATE</h2>
+            <p>EVOLVE 5.0 is a one-day state-level robotics championship bringing together school and engineering students to compete, innovate, and showcase their technical skills.</p>
+            <div class="location-info">
+                <h2>Organized by <span>ROBOTREE</span></h2>
+            </div>
+            <div class="prize-banner">
+                <div class="prize-item">
+                    <span class="prize-label">Total Prize Pool</span>
+                    <span class="prize-amount">₹1,00,000</span>
+                </div>
+            </div>
+            <a href="#events" class="cta-button" download>Download Documentation</a>
+        </div>
+    </section>
+
+    <section class="events-grid" id="events">
+        <div class="event-card">
+            <div class="event-icon">🏎️</div>
+            <h3>Robo Race</h3>
+            <p>Design and race your robot through a challenging track testing speed, control, and precision.</p>
+            <button class="register-btn" onclick="openModal('roborace')">Register Now</button>
+        </div>
+
+        <div class="event-card">
+            <div class="event-icon">🚁</div>
+            <h3>Drone Race</h3>
+            <p>Test your drone piloting skills in a high-speed race focused on stability, accuracy, and safety.</p>
+            <button class="register-btn" onclick="openModal('drone')">Register Now</button>
+        </div>
+
+        <div class="event-card">
+            <div class="event-icon">💡</div>
+            <h3>Innovation</h3>
+            <p>Showcase your innovative robotics project that solves real-world problems using technology.</p>
+            <button class="register-btn" onclick="openModal('innovation')">Register Now</button>
+        </div>
+    </section>
+
+    <section class="team-section" id="team">
+        <div class="team-container">
+            <h2 class="section-title">Organizing Team</h2>
+            <p class="section-subtitle">The dedicated team making State Robotics Championship 2026 a reality</p>
+            
+            <div class="team-category">
+                <h3 class="category-title">Core Leadership</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">👨‍💼</div>
+                        <h3>Mr. Rahul Singh</h3>
+                        <p class="team-role">Event Director</p>
+                        <p class="team-bio">Overall event leadership and strategic planning</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">👩‍🔬</div>
+                        <h3></h3>
+                        <p class="team-role">Technical Head</p>
+                        <p class="team-bio">Technical guidelines and competition standards</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">👨‍💻</div>
+                        <h3>Mr. Aditya Pandey</h3>
+                        <p class="team-role">Operations Manager</p>
+                        <p class="team-bio">Day-to-day operations and logistics coordination</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-category">
+                <h3 class="category-title">Competition Management</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">🏎️</div>
+                        <h3></h3>
+                        <p class="team-role">Robo Race Coordinator</p>
+                        <p class="team-bio">Track design, timing systems, and race execution</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">🚁</div>
+                        <h3></h3>
+                        <p class="team-role">Drone Race Coordinator</p>
+                        <p class="team-bio">Course setup, safety protocols, and pilot briefings</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">💡</div>
+                        <h3></h3>
+                        <p class="team-role">Innovation Lead</p>
+                        <p class="team-bio">Project evaluation and judging criteria management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-category">
+                <h3 class="category-title">Support Teams</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">🔧</div>
+                        <h3>Ajay Kumar</h3>
+                        <p class="team-role">Technical Support Lead</p>
+                        <p class="team-bio">On-site troubleshooting and equipment assistance</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">📋</div>
+                        <h3>Avinash Sinha</h3>
+                        <p class="team-role">Registration Manager</p>
+                        <p class="team-bio">Participant registration and documentation</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">👩‍💼</div>
+                        <h3>Neha Gupta</h3>
+                        <p class="team-role">Sponsorship & PR</p>
+                        <p class="team-bio">Corporate partnerships and media relations</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">🎯</div>
+                        <h3>Aditya Joshi</h3>
+                        <p class="team-role">Venue Coordinator</p>
+                        <p class="team-bio">Facility management and participant experience</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">📸</div>
+                        <h3>Sumit Pandey</h3>
+                        <p class="team-role">Media & Documentation</p>
+                        <p class="team-bio">Photography, videography, and social media</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">🎓</div>
+                        <h3>Amit Sharma</h3>
+                        <p class="team-role">Volunteer Coordinator</p>
+                        <p class="team-bio">Student volunteer recruitment and management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-category">
+                <h3 class="category-title">Judging Panel</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-avatar">⚖️</div>
+                        <h3>Dr. Suresh Iyer</h3>
+                        <p class="team-role">Chief Judge</p>
+                        <p class="team-bio">IIT Professor, Robotics & Automation expert</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">🔬</div>
+                        <h3>Prof. Meera Reddy</h3>
+                        <p class="team-role">Technical Judge</p>
+                        <p class="team-bio">AI & Machine Learning specialist</p>
+                    </div>
+
+                    <div class="team-card">
+                        <div class="team-avatar">🏆</div>
+                        <h3>Karan Malhotra</h3>
+                        <p class="team-role">Industry Judge</p>
+                        <p class="team-bio">Senior Robotics Engineer, Fortune 500 company</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location-section">
+        <div class="location-container">
+            <h2 class="section-title">Event Location</h2>
+            <p class="section-subtitle">Join us at one of Asansol's premier venues</p>
+            
+            <div class="location-details">
+                <div class="location-card">
+                    <div class="location-icon">🏢</div>
+                    <h3>Sentrum Mall</h3>
+                    <p class="address">Shristinagar, Asansol<br>West Bengal</p>
+                    <div class="location-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">🅿️</span>
+                            <span>Ample Parking</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🍽️</span>
+                            <span>Food Court Available</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">♿</span>
+                            <span>Wheelchair Accessible</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🚇</span>
+                            <span>Easy Public Transport Access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="venue-info">
+                    <h3 class="info-title">Venue Highlights</h3>
+                    <ul class="venue-list">
+                        <li><strong>Competition Arena:</strong> 5,000 sq ft dedicated space with professional lighting and setup</li>
+                        <li><strong>Workshop Area:</strong> Separate zones for each competition category with power outlets and workbenches</li>
+                        <li><strong>Spectator Gallery:</strong> Comfortable seating for 500+ audience members</li>
+                        <li><strong>Exhibition Zone:</strong> Display area for innovation projects and sponsor booths</li>
+                        <li><strong>Facilities:</strong> Air-conditioned halls, clean restrooms, first-aid station</li>
+                    </ul>
+                    
+                    <div class="directions-box">
+                        <h4>How to Reach</h4>
+                        <p><strong>By Train:</strong> 5 km from Asansol Junction Railway Station</p>
+                        <p><strong>By Road:</strong> Direct access from NH-2, well-connected to all parts of the city</p>
+                        <p><strong>Local Transport:</strong> Auto-rickshaws and taxis readily available</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Robo Race Modal -->
+    <div id="roborace-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('roborace')">&times;</button>
+            <h2>🏎️ Robo Race Registration</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>Entry Fee</h4>
+                    <p>₹1,500</p>
+                </div>
+                <div class="info-box">
+                    <h4>Prize Pool</h4>
+                    <p>₹50,000</p>
+                </div>
+                <div class="info-box">
+                    <h4>Team Size</h4>
+                    <p>2-4 Members</p>
+                </div>
+                <div class="info-box">
+                    <h4>Event Date</h4>
+                    <p>March 15, 2025</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="rules-section">
+                <h3>Robot Specifications</h3>
+                <ul>
+                    <li>Maximum dimensions: <span class="highlight">30cm × 30cm × 30cm</span></li>
+                    <li>Maximum weight: <span class="highlight">5 kg</span></li>
+                    <li>Robot must be fully autonomous (no remote control during race)</li>
+                    <li>Power supply: Battery operated only (max 24V DC)</li>
+                    <li>Must use line-following or vision-based navigation</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Competition Rules</h3>
+                <ul>
+                    <li>Track will be revealed 30 minutes before the race</li>
+                    <li>Each team gets <span class="highlight">3 attempts</span>, best time counts</li>
+                    <li>Touching or moving the robot during the race results in disqualification for that attempt</li>
+                    <li>Time penalties applied for crossing track boundaries</li>
+                    <li>Judges' decisions are final and binding</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Safety Requirements</h3>
+                <ul>
+                    <li>No sharp edges or hazardous materials allowed</li>
+                    <li>Emergency stop button mandatory</li>
+                    <li>Teams must carry fire extinguisher if using lithium batteries</li>
+                    <li>All team members must wear safety goggles during testing</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <form onsubmit="submitRegistration(event, 'roborace')">
+                <div class="form-group">
+                    <label for="robo-team-name">Team Name *</label>
+                    <input type="text" id="robo-team-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-school">School/College Name *</label>
+                    <input type="text" id="robo-school" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-leader-name">Team Leader Name *</label>
+                    <input type="text" id="robo-leader-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-email">Email Address *</label>
+                    <input type="email" id="robo-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-phone">Phone Number *</label>
+                    <input type="tel" id="robo-phone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-members">Number of Team Members *</label>
+                    <select id="robo-members" required>
+                        <option value="">Select...</option>
+                        <option value="2">2 Members</option>
+                        <option value="3">3 Members</option>
+                        <option value="4">4 Members</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="robo-experience">Previous Robotics Experience</label>
+                    <textarea id="robo-experience" rows="3" placeholder="Brief description of your team's experience..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Drone Race Modal -->
+    <div id="drone-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('drone')">&times;</button>
+            <h2>🚁 Drone Race Registration</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>Entry Fee</h4>
+                    <p>₹2,000</p>
+                </div>
+                <div class="info-box">
+                    <h4>Prize Pool</h4>
+                    <p>₹75,000</p>
+                </div>
+                <div class="info-box">
+                    <h4>Team Size</h4>
+                    <p>1-3 Members</p>
+                </div>
+                <div class="info-box">
+                    <h4>Event Date</h4>
+                    <p>March 16, 2025</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="rules-section">
+                <h3>Drone Specifications</h3>
+                <ul>
+                    <li>Maximum diagonal wheelbase: <span class="highlight">250mm</span></li>
+                    <li>Maximum weight with battery: <span class="highlight">1.5 kg</span></li>
+                    <li>FPV (First Person View) racing allowed with standard 5.8GHz frequency</li>
+                    <li>Propeller guards mandatory for safety</li>
+                    <li>Must have functional failsafe system</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Competition Format</h3>
+                <ul>
+                    <li>Qualification round: Individual time trials (top 16 advance)</li>
+                    <li>Knockout rounds: Head-to-head racing (single elimination)</li>
+                    <li>Each pilot gets <span class="highlight">2 minutes</span> to complete the course</li>
+                    <li>Fastest completion time wins; failure to finish = DNF</li>
+                    <li>Collision with obstacles adds <span class="highlight">5 second penalty</span> per collision</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Technical Requirements</h3>
+                <ul>
+                    <li>All drones must pass pre-flight safety inspection</li>
+                    <li>Video transmitter power: Maximum 600mW</li>
+                    <li>Spare parts and batteries responsibility of team</li>
+                    <li>No autonomous flight - manual control only</li>
+                    <li>GPS and altitude hold features must be disabled</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Safety Protocols</h3>
+                <ul>
+                    <li>Pilots must maintain visual line of sight at all times</li>
+                    <li>Arm drone only when instructed by race official</li>
+                    <li>Immediate disarm upon crash or leaving course boundaries</li>
+                    <li>Spectators must maintain safe distance from track</li>
+                    <li>Insurance certificate required for drone value over ₹50,000</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <form onsubmit="submitRegistration(event, 'drone')">
+                <div class="form-group">
+                    <label for="drone-team-name">Team Name *</label>
+                    <input type="text" id="drone-team-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-school">School/College Name *</label>
+                    <input type="text" id="drone-school" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-pilot-name">Pilot Name *</label>
+                    <input type="text" id="drone-pilot-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-email">Email Address *</label>
+                    <input type="email" id="drone-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-phone">Phone Number *</label>
+                    <input type="tel" id="drone-phone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-members">Number of Team Members *</label>
+                    <select id="drone-members" required>
+                        <option value="">Select...</option>
+                        <option value="1">1 Member (Solo)</option>
+                        <option value="2">2 Members</option>
+                        <option value="3">3 Members</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-type">Drone Type/Model *</label>
+                    <input type="text" id="drone-type" required placeholder="e.g., Custom Build, DJI FPV, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="drone-experience">Flight Hours & Competition Experience *</label>
+                    <textarea id="drone-experience" rows="3" required placeholder="Estimated flight hours and any previous competitions..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Innovation Competition Modal -->
+    <div id="innovation-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal" onclick="closeModal('innovation')">&times;</button>
+            <h2>💡 Innovation Competition Registration</h2>
+            
+            <div class="info-grid">
+                <div class="info-box">
+                    <h4>Entry Fee</h4>
+                    <p>₹1,200</p>
+                </div>
+                <div class="info-box">
+                    <h4>Prize Pool</h4>
+                    <p>₹1,00,000</p>
+                </div>
+                <div class="info-box">
+                    <h4>Team Size</h4>
+                    <p>2-5 Members</p>
+                </div>
+                <div class="info-box">
+                    <h4>Event Date</h4>
+                    <p>March 17, 2025</p>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="rules-section">
+                <h3>Project Requirements</h3>
+                <ul>
+                    <li>Must demonstrate <span class="highlight">original innovation</span> in robotics/automation</li>
+                    <li>Project should address real-world problem or need</li>
+                    <li>Working prototype mandatory (simulation-only projects not accepted)</li>
+                    <li>Maximum presentation time: <span class="highlight">15 minutes</span> + 10 minutes Q&A</li>
+                    <li>Teams must submit project abstract (max 500 words) by March 1, 2025</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Judging Criteria</h3>
+                <ul>
+                    <li><span class="highlight">Innovation & Creativity (30%):</span> Uniqueness and originality of solution</li>
+                    <li><span class="highlight">Technical Complexity (25%):</span> Engineering skills and technology integration</li>
+                    <li><span class="highlight">Functionality (25%):</span> How well the project works and solves the problem</li>
+                    <li><span class="highlight">Real-world Impact (15%):</span> Practical applicability and scalability</li>
+                    <li><span class="highlight">Presentation Quality (5%):</span> Clarity and professionalism of demonstration</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Submission Requirements</h3>
+                <ul>
+                    <li>Project documentation including circuit diagrams, code, and build process</li>
+                    <li>Bill of materials with cost breakdown</li>
+                    <li>PowerPoint/PDF presentation (max 20 slides)</li>
+                    <li>2-minute demo video (optional but recommended)</li>
+                    <li>All submissions due by <span class="highlight">March 10, 2025</span></li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Presentation Guidelines</h3>
+                <ul>
+                    <li>Setup time: 10 minutes before presentation</li>
+                    <li>Teams must bring their own equipment and power supplies</li>
+                    <li>Internet connectivity not guaranteed - prepare offline demos</li>
+                    <li>Projector and display screen will be provided</li>
+                    <li>Live demonstrations highly encouraged</li>
+                </ul>
+            </div>
+
+            <div class="rules-section">
+                <h3>Intellectual Property</h3>
+                <ul>
+                    <li>All projects must be original work of the team</li>
+                    <li>Open-source components must be properly credited</li>
+                    <li>Teams retain full IP rights to their innovations</li>
+                    <li>Event organizers may photograph/video projects for promotional use</li>
+                </ul>
+            </div>
+
+            <div class="divider"></div>
+
+            <form onsubmit="submitRegistration(event, 'innovation')">
+                <div class="form-group">
+                    <label for="inno-team-name">Team Name *</label>
+                    <input type="text" id="inno-team-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-school">School/College Name *</label>
+                    <input type="text" id="inno-school" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-project-title">Project Title *</label>
+                    <input type="text" id="inno-project-title" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-leader-name">Team Leader Name *</label>
+                    <input type="text" id="inno-leader-name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-email">Email Address *</label>
+                    <input type="email" id="inno-email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-phone">Phone Number *</label>
+                    <input type="tel" id="inno-phone" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-members">Number of Team Members *</label>
+                    <select id="inno-members" required>
+                        <option value="">Select...</option>
+                        <option value="2">2 Members</option>
+                        <option value="3">3 Members</option>
+                        <option value="4">4 Members</option>
+                        <option value="5">5 Members</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-category">Project Category *</label>
+                    <select id="inno-category" required>
+                        <option value="">Select...</option>
+                        <option value="healthcare">Healthcare & Medicine</option>
+                        <option value="agriculture">Agriculture & Environment</option>
+                        <option value="education">Education & Learning</option>
+                        <option value="industry">Industrial Automation</option>
+                        <option value="service">Service Robotics</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-abstract">Project Abstract (Max 500 words) *</label>
+                    <textarea id="inno-abstract" rows="6" required placeholder="Describe your innovation, the problem it solves, and your approach..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="inno-technologies">Key Technologies Used *</label>
+                    <input type="text" id="inno-technologies" required placeholder="e.g., Arduino, Raspberry Pi, AI/ML, Computer Vision, etc.">
+                </div>
+
+                <button type="submit" class="submit-btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>
+                            <a href="tel:+911129581239">+91 8540050070</a>, 
+                            <a href="tel:+911129581235">+91 11 29581235</a>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>
+                            <a href="mailto:evolve5.support@gmail.com">evolve5.support@gmail.com</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 ROBOTREE • EVOLVE 5.0 All Rights Reserved
+        </div>
+    </footer>
+
+    <script>
+        function openModal(eventType) {
+            const modal = document.getElementById(eventType + '-modal');
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(eventType) {
+            const modal = document.getElementById(eventType + '-modal');
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        function submitRegistration(event, eventType) {
+            event.preventDefault();
+            
+            let eventName = '';
+            if (eventType === 'roborace') eventName = 'Robo Race';
+            else if (eventType === 'drone') eventName = 'Drone Race';
+            else if (eventType === 'innovation') eventName = 'Innovation Competition';
+            
+            alert(`Thank you for registering for ${eventName}!\n\nYour registration has been received. You will receive a confirmation email within 24 hours with payment details and further instructions.\n\nEvent Date: March ${eventType === 'roborace' ? '15' : eventType === 'drone' ? '16' : '17'}, 2025\n\nFor queries, contact: robofest2025@email.com`);
+            
+            closeModal(eventType);
+            event.target.reset();
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
